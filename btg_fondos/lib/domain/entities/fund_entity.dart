@@ -10,4 +10,18 @@ class FundEntity {
     required this.minAmount,
     required this.category,
   });
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'name': name,
+    'minAmount': minAmount,
+    'category': category,
+  };
+
+  static FundEntity fromJson(Map<String, dynamic> json) => FundEntity(
+    id: json['id'],
+    name: json['name'],
+    minAmount: json['minAmount'].toDouble(),
+    category: json['category'],
+  );
 }
