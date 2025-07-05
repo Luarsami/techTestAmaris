@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "balance": 500000,
+      "portfolio": [],
+      "history": []
+    },
+    {
+      "username": "consultor1",
+      "password": "consultor123",
+      "role": "consultor"
+    }
+  ],
+  "funds": [
+    {
+      "id": 1,
+      "name": "FPV_BTG_PACTUAL_RECAUDADORA",
+      "minAmount": 75000,
+      "category": "FPV"
+    },
+    {
+      "id": 2,
+      "name": "FPV_BTG_PACTUAL_ECOPETROL",
+      "minAmount": 125000,
+      "category": "FPV"
+    }
+  ],
+  "history": [
+  {
+    "id": "TX123",
+    "type": "SUSCRIPCIÓN",
+    "fundName": "FPV_BTG_PACTUAL_RECAUDADORA",
+    "amount": 75000,
+    "date": "2025-07-04"
+  }
+]
+}

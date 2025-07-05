@@ -1,0 +1,10 @@
+default_platform(:android)
+
+platform :android do
+  desc "Compilar y subir a Play Store (beta)"
+  lane :deploy_beta do
+    gradle(task: "clean")
+    gradle(task: "assembleRelease")
+    upload_to_play_store(track: 'beta', skip_upload_metadata: true, skip_upload_images: true, skip_upload_screenshots: true)
+  end
+end
