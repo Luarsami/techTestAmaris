@@ -1,0 +1,2 @@
+json_key_file("clave-api-google-play.json") # Reemplaza con el archivo de credenciales
+package_name("com.amaris.fondos")       # El package name de tu app Android
